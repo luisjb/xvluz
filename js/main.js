@@ -17,9 +17,9 @@ const CONFIG = {
   // Datos para el regalo. Si alias y cvu quedan vacíos, la sección no se muestra.
   gift: {
     entity: 'Mercado Pago',
-    alias: 'luisjb.mp',
-    cvu: '1231231123123123',
-    holder: 'luis Bustamante',
+    alias: 'Luz.M.Molins.mp',
+    cvu: '-',
+    holder: 'Luz Maria Molins',
   },
 
   // Ventana en la que se habilita subir fotos (hora de Argentina).
