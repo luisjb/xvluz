@@ -313,12 +313,28 @@ body.locked { overflow: hidden; }
 
 /* ---------- Galería ---------- */
 .gallery { text-align: center; background: var(--cream); }
+.gallery .container { container-type: inline-size; }
+/* Mosaico: 2 grandes (a, h), 2 verticales (b, g), 4 chicas (c–f). Celdas cuadradas. */
 .gallery__grid {
+  --cols: 2; --gap: .6rem;
   list-style: none; margin: 0; padding: 0;
-  display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; grid-auto-flow: dense; gap: .6rem;
+  display: grid; gap: var(--gap);
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-auto-rows: calc((100cqi - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  grid-template-areas:
+    "a a" "a a"
+    "b c" "b d"
+    "h h" "h h"
+    "e g" "f g";
 }
-.gallery__grid li:nth-child(5n + 1) { grid-row: span 2; }
-.gallery__grid li:nth-child(5n + 3) { grid-column: span 2; grid-row: span 2; }
+.gallery__grid li:nth-child(1) { grid-area: a; }
+.gallery__grid li:nth-child(2) { grid-area: b; }
+.gallery__grid li:nth-child(3) { grid-area: c; }
+.gallery__grid li:nth-child(4) { grid-area: d; }
+.gallery__grid li:nth-child(5) { grid-area: e; }
+.gallery__grid li:nth-child(6) { grid-area: f; }
+.gallery__grid li:nth-child(7) { grid-area: g; }
+.gallery__grid li:nth-child(8) { grid-area: h; }
 .gallery__item {
   position: relative; display: block; width: 100%; height: 100%; padding: 0; border: 0;
   border-radius: var(--radius-sm); overflow: hidden; cursor: zoom-in; background: var(--sand);
@@ -539,7 +555,14 @@ body.locked { overflow: hidden; }
   .bento { grid-template-columns: 1fr 1fr; }
   .card--place { grid-column: span 2; }
   .map { aspect-ratio: 16 / 8; }
-  .gallery__grid { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: .8rem; }
+  .gallery__grid {
+    --cols: 4; --gap: .8rem;
+    grid-template-areas:
+      "a a b c"
+      "a a b d"
+      "e g h h"
+      "f g h h";
+  }
   .timer { gap: 1rem; }
   .timer__cell { padding: 1.8rem .5rem 1.4rem; }
   .lightbox__prev { left: 24px; } .lightbox__next { right: 24px; }

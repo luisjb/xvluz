@@ -29,19 +29,17 @@ const CONFIG = {
     until: '2026-11-09T23:59:59-03:00',
   },
 
+  // Galería en mosaico: el ORDEN define el lugar de cada foto (son exactamente 8):
+  // 1 grande · 2 vertical · 3-6 chicas · 7 vertical · 8 grande
   photos: [
-    { id: '1564', alt: 'Luz María con sombrero bajo un cielo nublado' },
-    { id: '1570', alt: 'Luz María montando a caballo' },
-    { id: '1600', alt: 'Luz María acariciando a su caballo entre los árboles' },
-    { id: '1574', alt: 'Luz María a caballo en el campo, con un potrillo' },
-    { id: '1626', alt: 'Luz María sonriendo con sombrero' },
-    { id: '1595', alt: 'Luz María junto a su caballo' },
-    { id: '1639', alt: 'Luz María riendo junto al caballo' },
-    { id: '1580', alt: 'Luz María sentada sobre el caballo' },
-    { id: '1608', alt: 'Luz María con su caballo y un potrillo' },
-    { id: '1645', alt: 'Retrato de Luz María con sombrero entre naranjos' },
-    { id: '1598', alt: 'Luz María acariciando la cara del caballo' },
-    { id: '1637', alt: 'Luz María apoyada en su caballo' },
+    { id: '1564', alt: 'Luz María con sombrero bajo un cielo nublado' },        // grande
+    { id: '1574', alt: 'Luz María a caballo en el campo, con un potrillo' },    // vertical
+    { id: '1570', alt: 'Luz María montando a caballo' },                        // chica
+    { id: '1595', alt: 'Luz María junto a su caballo' },                        // chica
+    { id: '1608', alt: 'Luz María con su caballo y un potrillo' },              // chica
+    { id: '1598', alt: 'Luz María acariciando la cara del caballo' },           // chica
+    { id: '1580', alt: 'Luz María sentada sobre el caballo' },                  // vertical
+    { id: '1645', alt: 'Retrato de Luz María con sombrero entre naranjos' },    // grande
   ],
 };
 
