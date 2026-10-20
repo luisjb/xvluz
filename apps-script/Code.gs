@@ -7,7 +7,7 @@
  */
 
 // ID de la carpeta de Drive donde se guardan las fotos (lo que va después de /folders/ en el link)
-const FOLDER_ID = 'PEGAR_ACA_EL_ID_DE_LA_CARPETA';
+const FOLDER_ID = '1kjkN5X2MgYOJNq5bvb-D3xO6oNexlsYx';
 
 // Ventana en la que se aceptan fotos (hora Argentina). Debe coincidir con CONFIG.photoUpload de la web.
 const UPLOAD_FROM = new Date('2026-11-07T00:00:00-03:00');

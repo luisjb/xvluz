@@ -12,7 +12,7 @@ const CONFIG = {
 
   // URL de la "Aplicación web" de Google Apps Script (ver CONFIGURAR-PLANILLA.md).
   // Recibe las confirmaciones (van a la planilla) y las fotos de la fiesta (van a Drive).
-  scriptUrl: '',
+  scriptUrl: 'https://script.google.com/macros/s/AKfycbycH_C116NlSpfozdRxBM97L7ev1fSTtJXok3X3-wDapo2qmxDC51xP6Bi0PzFd6oAUuA/exec',
 
   // Datos para el regalo. Si alias y cvu quedan vacíos, la sección no se muestra.
   gift: {
