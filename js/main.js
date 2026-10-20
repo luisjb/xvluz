@@ -5,7 +5,7 @@
 const CONFIG = {
   name: 'Luz María',
   // Fecha y hora del evento (hora de Argentina, -03:00)
-  start: '2026-11-07T19:00:00-03:00',
+  start: '2026-11-07T18:30:00-03:00',
   durationHours: 6,
   address: 'Mariano Moreno 121, Deán Funes, Córdoba',
   mapsUrl: 'https://maps.app.goo.gl/J4i8ASJ68L4ftbmx7',
